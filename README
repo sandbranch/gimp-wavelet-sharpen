@@ -1,6 +1,26 @@
 README
 ======
 
+GIMP 3 VERSION
+--------------
+
+This fork carries the port of the wavelet sharpen plugin to GIMP 3. The
+original plugin by Marco Rossini is at
+https://github.com/mrossini-ethz/gimp-wavelet-sharpen and supports GIMP 2.x.
+The port is being offered upstream; until it is merged, this is where it lives.
+
+What is new in the GIMP 3 version (see ChangeLog for details):
+
+- Runs in GIMP 3.0 and newer.
+- 16-bit and floating point images are sharpened at full precision.
+- Scripts use the same arguments as before, and GIMP remembers the last used
+  settings.
+- Builds with current compilers again, and a few bug fixes.
+
+For building and installing see the file INSTALL. Please report problems with
+the GIMP 3 version at
+https://github.com/sandbranch/gimp-wavelet-sharpen/issues
+
 The wavelet sharpen plugin increases apparent sharpness of an image. The amount
 of unsharpness in the original image can be taken into account. The plugin is
 not compareable to the builtin 'Sharpen' filter of the GIMP, however the
